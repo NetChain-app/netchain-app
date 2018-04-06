@@ -13,3 +13,10 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
+if( process.env.NODE_ENV === 'production' ){
+  let script = document.createElement('script')
+  script.src = 'cordova.js'
+
+  document.head.appendChild(script)
+}
