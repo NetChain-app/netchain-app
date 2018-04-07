@@ -3,6 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import { Scroller } from 'vux'
+
+Vue.component('scroller', Scroller)
 
 Vue.config.productionTip = false
 
